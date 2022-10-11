@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singup Login form</title>
+    <link rel="stylesheet" href="bhargavlogin.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="modalForm">
+            <div class="actionBtns">
+                <button class="actionBtn signupBtn">Singup</button>
+                <button class="actionBtn loginBtn" onclick="fun()">Login</button>
+                <button class="moveBtn">Singup</button>
+            </div>
+            <div class="userForm">
+                <form action="" class="form singup singupForm">
+                    <div class="inputGroup">
+                        <input type="text" placeholder="First name" autocomplete="offf" required>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="text" placeholder="Last name" autocomplete="offf" required>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="email" placeholder="Email address" autocomplete="offf" required>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="password" placeholder="Create new password" autocomplete="offf" required>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="password" placeholder="Confirm password" autocomplete="offf" >
+                    </div>
+                    <button type="submit" class="submitBtn"><a href="index.html">Singup</a></button>
+                </form>
+
+                <form action="" class="form login">
+                    <div class="inputGroup">
+                        <input type="email" placeholder="Email address" autocomplete="offf">
+                    </div>
+                    <div class="inputGroup">
+                        <input type="password" placeholder="Create new password" autocomplete="offf">
+                    </div>
+                    <button type="submit" class="submitBtn"><a href="index.html">Login</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const singupBtn = document.querySelector(".signupBtn");
+const loginBtn = document.querySelector(".loginBtn");
+const moveBtn = document.querySelector(".moveBtn");
+const singup = document.querySelector(".singup");
+const login = document.querySelector(".login");
+
+loginBtn.addEventListener("click",()=>{
+    moveBtn.classList.add("rightBtn");
+    login.classList.add("loginForm");
+    singup.classList.remove("singupForm");
+    moveBtn.innerHTML = "Login";
+})
+
+singupBtn.addEventListener("click",()=>{
+    moveBtn.classList.remove("rightBtn");
+    login.classList.remove("loginForm");
+    singup.classList.add("singupForm");
+    moveBtn.innerHTML = "Singup";
+})
+        
+    </script>
+</body>
+</html>
