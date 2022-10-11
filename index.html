@@ -19,7 +19,7 @@
 
 </head>
 <body>
-   <p>Hello</p>
+  
 <div class="header">
 
     <div class="containar">
@@ -325,34 +325,75 @@
         </div>
     </div>
 </div>
+<div class="testimonial">
+    <h2 class="title">Comment section</h2>
+    <div class="small-containr">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <h3><img style="width: 100px; height: 100px; padding: 5px 0 0 0" src="images/maulik.png"></img> <br><h3>Maulik Vasoya</h3>
+                <p>Nice product are available in this website.I liked it</p>
+                
+               
+            </div>
+            
+        <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <h3><img style="width: 100px; height: 100px; padding: 5px 0 0 0" src="images/vatsal.png"></img><br><h3>Vatsal Mavani</h3>
+            <p>Nice website i have ever seen.I do my all shopping from this website </p>  
+        
+    </div>
+    <div class="col-3">
+        <i class="fa fa-quote-left"></i>
+        <h3><img style="width: 100px; height: 100px; padding: 5px 0 0 0" src="images/ashish.png"></img><br><h3>Ashish Vasoya</h3>
+        <p>Best shopping website for men,women,kids</p>
+       
+       
+    
+</div>
+    <div class="col-3">
+        <i class="fa fa-quote-left"></i>
+        <h3><img style="width: 100px; height: 100px; padding: 5px 0 0 0" src="images/darshil.png"></img><br><h3>Darshil Poshiya</h3>
+        <p>I liked website user interface and content </p>
+       
+        
+    
+</div>
+<div class="col-3">
+    <i class="fa fa-quote-left"></i>
+    <h3><img style="width: 100px; height: 100px; padding: 5px 0 0 0" src="images/krish.png"></img><br><h3>Krish Sakhiya</h3>
+    <p>This website provide good quality of cloths and watches</p>
+   
+   
+
+</div>
+<div class="col-3">
+    <i class="fa fa-quote-left"></i>
+    <h3><img style="width: 100px; height: 100px; padding: 5px 0 0 0" src="images/sujit.png"></img><br><h3>Sujit vagadiya</h3>
+    <p>This is my friend website 😂😂 </p>
+   
+    
+
+</div>
+    </div>
+</div>
+
 
 <!-- testimonial -->
-
+<h2 class="title">Contributers</h2>
 <div class="testimonial">
     <div class="small-containr">
         <div class="row">
             <div class="col-3">
                 <i class="fa fa-quote-left"></i>
                 <p>Currently Student at CSPIT-IT</p>
-                <!-- <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div> -->
+               
                 <h3><img style="width: 100px; height: 100px; padding: 5px 0 0 0" src="images/nishit.png"></img> <br><h3>Nishit Rokad</h3>
             </div>
             <div class="col-3">
                 <i class="fa fa-quote-left"></i>
                 <p>Currently Student at CSPIT-IT </p>
-                <!-- <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div> -->
+               
                 <h3><img style="width: 100px; height: 100px; padding: 5px 0 0 0" src="images/bhargav.png"></img><br><h3>Bhargav Sandis</h3>
             <!-- </div> -->
             <!-- <div class="col-3">
@@ -452,9 +493,14 @@
 
 
 
+</body>
+</html>
+
+
 <!-- ----------java Script for toggle menu------ -->
 
 <script>
+  
     var MenuItems = document.getElementById("MenuItems");
 
     MenuItems.style.maxHeight = "0px";
@@ -474,6 +520,39 @@
 
 
 <!-- ------------------------ZOOM A PHOTO-------------- -->
+<div class="container">
+    <span id="time"></span>
+    <!-- <h1>This is my heading</h1>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum earum quidem nulla natus, molestias rerum atque tempora cupiditate est! Ipsam adipisci, deleniti sit, doloremque quos assumenda repellat neque similique facilis minus ipsum. Ut blanditiis eaque sapiente, mollitia at iusto provident ullam, labore voluptas aspernatur nisi adipisci saepe, sed consectetur. Nulla, iusto aliquam. Saepe ipsam debitis modi voluptates a quisquam, consectetur rerum ipsa, asperiores, nesciunt quam aut eos minima! Doloribus ab aut animi maiores est necessitatibus, culpa repudiandae omnis minus deserunt ut quos commodi ea beatae modi porro itaque consectetur, dolorem quibusdam veniam! Cum molestias ipsa dolor dolores quia perferendis saepe, praesentium unde nisi, corporis mollitia eveniet quis illum. Molestiae, voluptatibus perspiciatis, sit optio quo blanditiis quidem, ratione mollitia accusantium vel possimus! Aperiam facilis nobis a quod accusantium quidem autem inventore aut praesentium magnam.
+    </p>
+    <button id="btn" onclick="toggleHide()">show</button> -->
+
+</div>
+<script>
+    // function toggleHide()
+    // {
+    //     let btn=document.getElementById("btn");
+    //     let para=document.getElementById("para");
+    //     if(para.style.display!='none')
+    //     {
+    //         para.style.display='none';
+    //     }
+    //     else
+    //     {
+    //         para.style.display='block';
+    //     }
+    // }
+
+    function displayTime()
+    {
+        time=new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML=time;
+        setInterval(displayTime,1000);
+    }
+    setInterval(displayTime,1000)
+</script>
 
 
 
