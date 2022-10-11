@@ -7,6 +7,14 @@
 body{
     font-family: 'Oswald', 'Poppins', sans-serif;
 }
+.container{
+    padding: 20px;
+    text-align: center;
+    border: 8px solid black;
+    background-color: #ffd6d6;
+    color: #000;
+    display: block;
+}
 
 .navbar{
     display: flex;
@@ -366,8 +374,25 @@ hr{
     display: none; 
 }
 
+/*----------------------------------------------*/
+.googlepay>img{
+ 
+ 
+    height: 80px;
+    width: 80px;
+}
 /* -----------------About Us Page ----------------- */
+.padding{
 
+    padding: 5rem !important;
+}
+
+
+
+.form-control:focus {
+   box-shadow: 10px 0px 0px 0px #ffffff !important;
+   border-color: #4ca746;
+}
 .aboutus{
     height: 50vh;
     width: 100%;
